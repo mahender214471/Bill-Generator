@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill generator</title>
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+<body>
+    <form method="POST" action="/login" onsubmit="return calculation();">
+          <h1>Jai Sai Medacal Store</h1>
+        <div class="cdetail">
+            <h2>Custemer Detail</h2>
+          <input type="text" placeholder="Custemer Name" name="CName">
+          <input type="Number" placeholder="Custemer Mobile no." name="CMobile">
+          <input type="text" placeholder="E-mail" name="Cemail">
+       </div>
+
+       <div class="pdetail">
+           <h2>Medicine Detail</h2>
+          <input type="text" placeholder="medicine-1" name="m1" >
+          <input type="number" placeholder="Quintity" name="Q1" id="Q1">
+          <input type="number" placeholder="Rate/product" name="R1" id="R1">
+
+          <input type="text" placeholder="medicine-2" name="m2" id="">
+          <input type="number" placeholder="Quintity" name="Q2" id="Q2">
+          <input type="number" placeholder="Rate/product" name="R2" id="R2">
+          <input type="text" placeholder="medicine-3" name="m3" >
+          <input type="number" placeholder="Quintity" name="Q3" id="Q3">
+          <input type="number" placeholder="Rate/product" name="R3" id="R3">
+          <input type="hidden" name="mt1"id="mt1">
+          <input type="hidden" name="mt2"id="mt2">
+          <input type="hidden" name="mt3"id="mt3">
+          <input type="hidden" name="total" id="total">
+       </div>
+       <button type="submit">Generate Bill</button>
+       <button type="reset">Reset</button>
+        <a href="http://localhost/search"><button type="button">Search Bill</button></a>
+    </form>
+
+         
+    <script>
+        //calculation function
+            function calculation(){
+            var Q1=document.getElementById('Q1').value;
+            var Q2=document.getElementById('Q2').value;
+            var Q3=document.getElementById('Q3').value;
+
+            var R1=document.getElementById('R1').value;
+            var R2=document.getElementById('R2').value;
+            var R3=document.getElementById('R3').value;
+
+             var m1total=Q1*R1;
+             var m2total=Q2*R2;
+             var m3total=Q3*R3;
+
+             document.getElementById('mt1').setAttribute("value",m1total);
+             document.getElementById('mt2').setAttribute("value",m2total);
+              document.getElementById('mt3').setAttribute("value",m3total);
+
+              var total=(m1total+m2total)+m3total;
+                document.getElementById('total').setAttribute("value",total);
+             return true;
+        }
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+/* styling of bill form */
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+    font-size: 62.5%;
+    background-color: #17c0eb;
+}
+form{
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: .1rem solid black;
+}
+form h1{
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    padding-top: .5rem;
+    font-size: 5rem;
+    background-color: #18dcff;
+    color: white;
+
+}
+.cdetail h2{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+.cdetail input{
+    width:25%;
+    height: 5rem;
+    border: .1rem solid #18dcff ;
+    border-radius: .5rem;
+    outline: none;
+    margin-left: 6rem;
+    padding-left: 2rem;
+}
+.pdetail{
+    position: relative;
+    top: 1rem;
+}
+.pdetail h2{
+    font-size: 2rem;
+    color: black;
+    padding-left: 1rem;
+}
+.pdetail input{
+    width:25%;
+    height: 3rem;
+    border: .1rem solid #18dcff ;
+    border-radius: .5rem;
+    outline: none;
+    margin-left: 6rem;
+    margin-top: .4rem;
+    padding-left: 2rem;
+}
+form button{
+    width:15%;
+    height: 5rem;
+    border:0;
+    box-sizing: 3rem;
+    border-radius: 3rem;
+    outline: none;
+    background-color: #18dcff;
+    position: relative;
+    left: 50%;
+    top: 15rem;
+    cursor: pointer;
+}
+
+
+/* styling of bill page  */
+
+
+
+.billPage{
+    width: 90%;
+    height: 100vh;
+    border: 2px solid black;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header{
+    width: 100%;
+    height: 10rem;
+    background-color:  #18dcff;
+}
+.header img{
+    width: 10rem;
+    height: 10rem;
+    position:absolute;
+    top:-1rem;
+}
+.header h1{
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    font-size: 5rem;
+    padding-top: .5rem;
+}
+
+.header p{
+    text-align: center;
+    font-size: 2rem;
+}
+.header h2{
+    font-size: 1.5rem;
+    position: relative;
+    top: -1.5rem;
+    left: .5rem;
+    color:black;
+}
+
+.custmer {
+    width: 100%;
+    height: 10rem;
+}
+.custmer h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.custmer table{
+    width: 100%;
+    height: 100%;
+    border: 1px  solid black;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.custmer table th{
+    border: .1rem solid black;
+}
+.product{
+    width: 100%;
+    font-size: 2rem;
+    text-align: left;
+}
+.product {
+   width: 100%;
+   height: 50%;  
+}
+
+/* bottom buttons css */
+.billPage button{
+    width: 10rem;
+    height: 5rem;
+    border: 0;
+    outline: none;
+    margin-left: 2rem;
+    cursor: pointer;
+    background-color: #18dcff;
+    border-radius: 2rem;
+    position: relative;
+    top: 30rem;
+    
+}
+
+
+/* style of search custemer bill */
+.search{
+    width:20rem;
+    height:20rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.searchForm h1{
+    width: 100%;
+    height: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: .3rem;
+    color: white;
+    background-color: navy;
+}
+.searchForm input{
+    width: 80%;
+    height: 5rem;
+    border:0;
+    outline: none;
+    border-radius: 1rem;
+    padding-left: 4rem;
+    background-color: gainsboro;
+    position: relative;
+    left: 10%;
+    top: 10rem;
+}
+
+.sumitbtn ,.homebtn {
+    border: 0;
+    outline: 0;
+    border-radius: 2rem;
+    background-color: navy;
+    color: white;
+    
+}
+.sumitbtn{
+    width: 20rem;
+    position: absolute;
+    left:25%;
+    top:23rem;
+   
+}
+.homebtn{
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    width: 20rem;
+    height: 5rem;
+}
+
+/* 404 template  */
+
+.err{
+    width: 50%;
+    height: 60vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.err h1{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 4rem;
+    color: red;
+}
+.err button{
+    width: 20rem;
+    height: 5rem;
+    border: 0;
+    border-radius: 2rem;
+    background-color: blue;
+    position: relative;
+    top: 20rem;
+    left: 28%;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
